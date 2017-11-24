@@ -1,3 +1,8 @@
-// @import "node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/normalize.css/normalize";
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+@import "../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar";
 
 // @import "app/libs/magnific-popup/dist/magnific-popup" // Импортируем библиотеку Magnific Popup

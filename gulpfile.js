@@ -33,7 +33,8 @@ gulp.task('scripts', function() {
 		// 'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		// 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		'node_modules/jquery/dist/jquery.js', // Берем jQuery
-		// 'node_modules/slick-carousel/slick/slick.js'
+		'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js'
 		])
 		.pipe(concat('libs.js')) // Собираем их в кучу в новом файле libs.min.js
 		// .pipe(uglify()) // Сжимаем JS файл
