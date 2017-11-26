@@ -9,6 +9,29 @@ $second-color: #ff6161;
 $third-color: #4d60cc;
 $text-color: #2c2c2c;
 
+@mixin tag-item(){
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #ffffff;
+  height: 23px;
+  line-height: 18px;
+  border-radius: 2.7px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: $third-color;
+  font-size: 14.4px;
+  border: 2px solid $third-color;
+}
+@mixin tag-item-hover{
+  background-color: #ffffff;
+  color: $second-color;
+  border: 2px solid $second-color;
+  line-height: 18px;
+}
+
 @import "fonts";
 
 body {

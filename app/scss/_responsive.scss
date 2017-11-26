@@ -1,6 +1,35 @@
+
+
 @media screen and (min-width: 1201px){
   .main-slider{
     display: none;
+  }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1201px){
+  .interviews .main{
+    margin-top: 79px;
+  }
+  .interviews .interviews__list__img{
+    float: none;
+  }
+  .interviews .interviews__list__info{
+    height: auto;
+    padding-left: 0;
+    width: auto;
+  }
+  .interviews .interviews__list__info__text{
+    position: relative;
+    transform: none;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 0;
+  }
+
+  .interviews__popular__item:first-child .interviews__popular__onlytext,
+  .interviews__popular__item:last-child .interviews__popular__onlytext{
+    font-size: 1.2vw;
   }
 }
 
@@ -8,11 +37,186 @@
   .main-slider{
     display: none;
   }
+
+  .header-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .homecont {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    margin-top: 30px;
+    padding: 30px 40px 30px;
+  }
+
+  .menumob__link {
+    top: 51px;
+    right: 2px;
+    width: 30px;
+    height: 22px;
+  }
+  .menumob {
+    top: 51px;
+    right: -2%;
+  }
+
+  .container__title{
+    font-size: 40px;
+  }
+  .interviews .main{
+    margin-top: 69px;
+  }
+  .interviews .interviews__list__title{
+    font-size: 23px;
+  }
+  .interviews .interviews__list__link{
+    font-size: 1.6vw;
+  }
+  .interviews .interviews__list__img{
+    float: none;
+  }
+  .interviews .interviews__list__info{
+    height: auto;
+    padding-left: 0;
+    width: auto;
+  }
+  .interviews .interviews__list__info__text{
+    position: relative;
+    transform: none;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 0;
+  }
+
+  .interviews .interviews__popular__btn__wrap{
+    margin-top: 30px;
+  }
+  .interviews .interviews__popular__btn,
+  .videos .videos__btn{
+    height: 80px;
+    line-height: 80px;
+    font-size: 35px;
+  }
+
+  .videos .main__title,
+  .productions .main__sec__title{
+    font-size: 2.5vw;
+  }
+
+  .videos .container__slider2 .videoDesc .slick-next, .videos .container__slider2 .videoDesc .slick-prev, .videos .container__slider2 .productDesc .slick-next, .videos .container__slider2 .productDesc .slick-prev {
+    top: 82px;
+  }
+  .videos .container__slider2 .popularDesc .slick-next, .videos .container__slider2 .popularDesc .slick-prev {
+    top: 166px;
+  }
+
+  .calendar {
+    margin-top: 30px;
+    padding: 50px 60px 50px;
+  }
+
+  .footer__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px){
   .main-slider{
     display: none;
+  }
+
+  .header-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .homecont {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    margin-top: 30px;
+    padding: 30px 40px 30px;
+  }
+
+  .menumob__link {
+    top: 51px;
+    right: 2px;
+    width: 30px;
+    height: 22px;
+  }
+  .menumob {
+    top: 51px;
+    right: -2%;
+  }
+
+  .container__title{
+    font-size: 40px;
+  }
+  .interviews .main{
+    margin-top: 69px;
+  }
+  .interviews .interviews__list__title{
+    font-size: 23px;
+  }
+  .interviews .interviews__list__link{
+    font-size: 1.6vw;
+  }
+  .interviews .interviews__list__img{
+    float: none;
+  }
+  .interviews .interviews__list__info{
+    height: auto;
+    padding-left: 0;
+    width: auto;
+  }
+  .interviews .interviews__list__info__text{
+    position: relative;
+    transform: none;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 0;
+  }
+
+  .interviews .interviews__popular__btn__wrap{
+    margin-top: 30px;
+  }
+  .interviews .interviews__popular__btn,
+  .videos .videos__btn{
+    height: 80px;
+    line-height: 80px;
+    font-size: 35px;
+  }
+
+  .videos .main__title,
+  .productions .main__sec__title{
+    font-size: 2.5vw;
+  }
+
+  .videos .container__slider2 .videoDesc .slick-next, .videos .container__slider2 .videoDesc .slick-prev, .videos .container__slider2 .productDesc .slick-next, .videos .container__slider2 .productDesc .slick-prev {
+    top: 82px;
+  }
+  .videos .container__slider2 .popularDesc .slick-next, .videos .container__slider2 .popularDesc .slick-prev {
+    top: 166px;
+  }
+
+  .calendar {
+    margin-top: 30px;
+    padding: 50px 60px 50px;
+  }
+
+  .footer__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 

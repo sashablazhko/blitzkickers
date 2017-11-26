@@ -7,6 +7,14 @@ $(function() {
     slidesToShow: 1,
     speed: 500,
     variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerPadding: '40px',
+        }
+      }
+    ]
   });
 
   $('.videoDesc').slick({
