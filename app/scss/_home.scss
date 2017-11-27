@@ -2,6 +2,7 @@
 .header-wrapper{
   background-color: #fff;
   width: 100%;
+  position: relative;
   padding-left: 204px;
   padding-right: 204px;
   padding-top: 30px;
@@ -176,7 +177,7 @@
 .content__display,
 .left-bracket__display,
 .right-bracket__display{
-  display: none;
+  opacity: 0;
 }
 /*----------------END SLIDER------------------*/
 
@@ -594,6 +595,10 @@
     a{
       text-decoration: none;
       color: #000;
+
+      &:hover .interviews__popular__image img{
+        opacity: 0;
+      }
     }
 
     &:first-child{
@@ -651,9 +656,47 @@
   }
 
   &__image{
+    position: relative;
 
     img{
       width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    &__cont{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 4px;
+      background-color: $third-color;
+      z-index: 1;
+
+      &__text{
+        font-family: "PatuaOne-Regular";
+        font-size: 1.6vw;
+        line-height: 1.16;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      &__auth{
+        font-family: "HelveticaReg";
+        font-size: 18px;
+        line-height: 1.61;
+        color: #ffffff;
+      }
+
+      .fix-center{
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        padding: 0 30px;
+      }
     }
   }
 
@@ -962,6 +1005,10 @@
     text-align: left;
     margin-bottom: 20px;
   }
+
+  .videos__btnmob__wrap{
+    display: none;
+  }
 }
 /*----------------END MOST POPULAR------------------*/
 
@@ -1104,6 +1151,7 @@
         background-repeat: no-repeat;
         -webkit-background-size: contain;
         background-size: contain;
+        margin-right: 0;
       }
     }
 
