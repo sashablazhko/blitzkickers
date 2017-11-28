@@ -31,6 +31,12 @@ $text-color: #2c2c2c;
   border: 2px solid $second-color;
   line-height: 15px;
 }
+@mixin img-on-bg{
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
 
 @import "fonts";
 
@@ -65,4 +71,5 @@ ol {
 
 
 @import "home";
+@import "category";
 @import "responsive";

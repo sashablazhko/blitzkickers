@@ -18,12 +18,20 @@
     -webkit-align-items: flex-end; /* Safari */
     align-items: flex-end;
 
+    &--home .logo__link__text{
+      display: none;
+    }
 
     .logo{
       display: inline-block;
       //width: 35%;
 
-      .img{
+      &__link{
+        text-decoration: none;
+        color: $second-color;
+        font-family: $ff-main-title;
+      }
+      &__link__img{
         display: inline-block;
         width: 26vw;
       }
@@ -152,6 +160,16 @@
     border-right: 7px solid #f9f9f9;
   }
 }
+
+.container-slider1 .clip-item-img{
+  width: 100%;
+  height: 880px;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
 .clip {
   //height: 883px;
   overflow: hidden;
@@ -173,6 +191,7 @@
   opacity:0.8;
   //transition:all 300ms ease;
   bottom: 0;
+  max-height: 791px;
 }
 .content__display,
 .left-bracket__display,
@@ -479,6 +498,10 @@
     float: left;
     margin-top: 48px;
 
+    &-desc-img{
+      height: 620px;
+      @include img-on-bg();
+    }
     img {
       width: 100%;
     }
@@ -548,6 +571,8 @@
       width: 165px;
       height: 101px;
       float: left;
+
+      @include img-on-bg();
     }
 
     &__info{
@@ -596,8 +621,11 @@
       text-decoration: none;
       color: #000;
 
-      &:hover .interviews__popular__image img{
+      &:hover .interviews__popular__image .interviews__popular__image__pc{
         opacity: 0;
+      }
+      &:hover .interviews__popular__image__cont{
+        background-color: $third-color;;
       }
     }
 
@@ -664,14 +692,23 @@
       z-index: 10;
     }
 
+    &__pc{
+      width: 100%;
+      position: relative;
+      z-index: 20;
+      height: 345px;
+      @include img-on-bg();
+    }
+
     &__cont{
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 4px;
-      background-color: $third-color;
+      bottom: 6px;
+      background-color: #fff;
       z-index: 1;
+      text-align: center;
 
       &__text{
         font-family: "PatuaOne-Regular";
@@ -817,8 +854,15 @@
     &__item{
       width: 47%;
 
+      & > a{
+        text-decoration: none;
+        color: #000;
+      }
+
       &__img__wrap{
         position: relative;
+        height: 392px;
+        @include img-on-bg();
       }
 
       &__play{
@@ -882,6 +926,9 @@
     .clip-item-img{
       margin-bottom: 15.5px;
       position: relative;
+
+      height: 237px;
+      @include img-on-bg();
     }
     .clip-item-cont > a{
       text-decoration: none;
@@ -955,7 +1002,9 @@
 
     &__img{
       width: 74%;
+      height: 596px;
       float: left;
+      @include img-on-bg();
 
       img{
         width: 100%;
@@ -1009,6 +1058,9 @@
   .videos__btnmob__wrap{
     display: none;
   }
+}
+.videos .container__slider2 .popularDesc .clip-item-img{
+  height: 480px;
 }
 /*----------------END MOST POPULAR------------------*/
 
