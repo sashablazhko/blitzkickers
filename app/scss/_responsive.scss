@@ -691,6 +691,31 @@
   }
 
   //  ---------------------------------END INTERINTER
+
+  //  ---------------------------------SEARCH
+  .header--search .logo__search{
+    padding-right: 17px;
+  }
+  .header--search .logo__search__icon {
+    position: absolute;
+    right: 30px;
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/search-menu.svg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .header--search .logo__search__inp{
+    height: 39px;
+    padding: 5px 35px 5px 16px;
+    font-size: 25px;
+  }
+  //  ---------------------------------END SEARCH
+
+
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
@@ -1199,6 +1224,29 @@
   }
 
   //  ---------------------------------END INTERINTER
+
+  //  ---------------------------------SEARCH
+  .header--search .logo__search{
+    padding-right: 17px;
+  }
+  .header--search .logo__search__icon {
+    position: absolute;
+    right: 30px;
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/search-menu.svg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .header--search .logo__search__inp{
+    height: 39px;
+    padding: 5px 35px 5px 16px;
+    font-size: 25px;
+  }
+  //  ---------------------------------END SEARCH
 
 }
 
@@ -1709,5 +1757,28 @@
   }
 
   //  ---------------------------------END INTERINTER
+
+  //  ---------------------------------SEARCH
+  .header--search .logo__search{
+    padding-right: 17px;
+  }
+  .header--search .logo__search__icon {
+    position: absolute;
+    right: 30px;
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/search-menu.svg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .header--search .logo__search__inp{
+    height: 39px;
+    padding: 5px 35px 5px 16px;
+    font-size: 25px;
+  }
+  //  ---------------------------------END SEARCH
 
 }

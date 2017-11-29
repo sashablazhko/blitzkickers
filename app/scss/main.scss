@@ -60,6 +60,11 @@ ol {
   list-style-type: none;
 }
 
+input, select, textarea{
+  color: $second-color;
+  font-family: $ff-main-title;
+}
+
 .clearfix {
 
   &:after {
@@ -74,5 +79,6 @@ ol {
 @import "category";
 @import "interviews";
 @import "search";
+@import "prod";
 
 @import "responsive";
