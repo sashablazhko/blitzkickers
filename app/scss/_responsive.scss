@@ -45,6 +45,26 @@
   }
 }
 
+@media screen and (max-width: 1600px) and (min-width: 1201px){
+  .interinter .interinter__list__img{
+    float: none;
+  }
+  .interinter .interinter__list__info{
+    height: auto;
+    padding-left: 0;
+    margin-top: 10px;
+    width: auto;
+  }
+  .interinter .interinter__list__info__text{
+    position: relative;
+    transform: none;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 0;
+  }
+}
+
 @media screen and (max-width: 1200px) and (min-width: 993px){
   .main-slider{
     display: none;
@@ -148,6 +168,29 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+//  ---------------------------------INTERINTER
+  .interinter .interinter__list__link{
+    font-size: 1.6vw;
+  }
+  .interinter .interinter__list__img{
+    float: none;
+  }
+  .interinter .interinter__list__info{
+    height: auto;
+    padding-left: 0;
+    margin-top: 10px;
+    width: auto;
+  }
+  .interinter .interinter__list__info__text{
+    position: relative;
+    transform: none;
+    width: auto;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 0;
+  }
+//  ---------------------------------END INTERINTER
 
 }
 
@@ -519,23 +562,82 @@
     &__title{
       font-size: 16px;
     }
+
+    &__type{
+      display: block;
+      color: $third-color;
+      font-family: $ff-text;
+      font-size: 16px;
+      line-height: 1.63;
+    }
+
+    &__text,
+    &__tags{
+      display: none;
+    }
   }
-  .videos .catmus__flex__item__type{
-    display: block;
-    color: $third-color;
-    font-family: $ff-text;
-    font-size: 16px;
-    line-height: 1.63;
-  }
-  .catmus__flex__item__text,
-  .catmus__flex__item__tags{
-    display: none;
-  }
+
+
   .bracketsmore__link{
     margin-top: 40px;
     margin-bottom: 37px;
   }
   //  -----------------------END CATEGORY-------------------------
+
+  //  ---------------------------------INTERINTER
+  .interinter__wrap .container__title--display{
+    display: inline;
+  }
+  .interinter .interinter__list{
+    display: none;
+  }
+  .interinter .interinter__flex{
+    width: 100%;
+    float: none;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .interinter .interinter__flex__item{
+    width: 100%;
+    margin-bottom: 10px;
+
+    &__img{
+      width: 50%;
+      float: left;
+      margin-bottom: 0;
+    }
+    &__cont{
+      width: 50%;
+      float: left;
+      height: 100%;
+      padding-left: 15px;
+      display: table;
+
+      .fix__height{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    &__title{
+      font-size: 16px;
+    }
+
+    &__type{
+      display: block;
+      color: $third-color;
+      font-family: $ff-text;
+      font-size: 16px;
+      line-height: 1.63;
+    }
+
+    &__text,
+    &__tags{
+      display: none;
+    }
+  }
+
+  //  ---------------------------------END INTERINTER
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){

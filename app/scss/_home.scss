@@ -577,20 +577,22 @@
 
     &__info{
       position: relative;
-      display: block;
+      display: table;
       float: left;
       width: calc(100% - 165px);
       height: 101px;
       padding-left: 33px;
 
       &__text{
-        width: calc(100% - 165px);
-        margin: auto;
-        position: absolute;
-        top: 50%; left: 30px;
-        -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
+        //width: calc(100% - 165px);
+        //margin: auto;
+        //position: absolute;
+        //top: 50%; left: 30px;
+        //-webkit-transform: translate(-50%,-50%);
+        //-ms-transform: translate(-50%,-50%);
+        //transform: translate(-50%,-50%);
+        display: table-cell;
+        vertical-align: middle;
       }
     }
   }

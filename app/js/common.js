@@ -172,6 +172,11 @@ $(function() {
       $(".items-wrapper").mCustomScrollbar({
         theme:"my-theme"
       });
+
+      $('.interinter__list__items-wrapper').height($('.interinter .interinter__flex').height());
+      $(".interinter__list__items-wrapper").mCustomScrollbar({
+        theme:"my-theme"
+      });
     }else{
       $('.items-wrapper').css('height', 'auto');
       $('.header-wrapper').append( $('#menumob') );
@@ -194,6 +199,8 @@ $(function() {
         timeout = false;
         if (windowsize >= 993){
           $('.items-wrapper').height($('.interviews .main').height());
+
+          $('.interinter__list__items-wrapper').height($('.interinter .interinter__flex').height());
         }else{
           $('.items-wrapper').css('height', 'auto');
         }
