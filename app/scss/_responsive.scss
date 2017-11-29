@@ -293,9 +293,9 @@
   .interviews__popular{
     display: none;
   }
-  
+
   .clip{
-    
+
     a{
       text-decoration: none;
     }
@@ -477,7 +477,7 @@
 
   }
 
-//  -----------------------CATEGORY-------------------------
+  //  -----------------------CATEGORY-------------------------
   .header .logo__link__text {
     font-size: 48px;
   }
@@ -495,7 +495,7 @@
     padding-left: 28px;
     padding-right: 28px;
   }
-  .catmus__flex__item{
+  .videos .catmus__flex__item{
     width: 100%;
     margin-bottom: 10px;
 
@@ -520,7 +520,7 @@
       font-size: 16px;
     }
   }
-  .catmus__flex__item__type{
+  .videos .catmus__flex__item__type{
     display: block;
     color: $third-color;
     font-family: $ff-text;
@@ -535,7 +535,7 @@
     margin-top: 40px;
     margin-bottom: 37px;
   }
-//  -----------------------END CATEGORY-------------------------
+  //  -----------------------END CATEGORY-------------------------
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
@@ -865,12 +865,15 @@
 
   }
 
-//  -----------------------CATEGORY-------------------------
+  //  -----------------------CATEGORY-------------------------
   .header .logo__link__text {
     font-size: 36px;
   }
   .mobcat__wrap{
     display: block;
+  }
+  .catmus__wrap .container__title{
+    font-size: 30px;
   }
   .catmus__wrap .container__title--display{
     display: inline;
@@ -889,7 +892,7 @@
     padding-left: 28px;
     padding-right: 28px;
   }
-  .catmus__flex__item{
+  .videos .catmus__flex__item{
     width: 100%;
     margin-bottom: 10px;
 
@@ -915,7 +918,7 @@
       font-size: 16px;
     }
   }
-  .catmus__flex__item__type{
+  .videos .catmus__flex__item__type{
     display: block;
     color: $third-color;
     font-family: $ff-text;
@@ -930,7 +933,7 @@
     margin-top: 40px;
     margin-bottom: 37px;
   }
-//  -----------------------END CATEGORY-------------------------
+  //  -----------------------END CATEGORY-------------------------
 
 }
 
@@ -1269,6 +1272,9 @@
   .mobcat__wrap{
     display: block;
   }
+  .catmus__wrap .container__title{
+    font-size: 17px;
+  }
   .catmus__wrap .container__title--display{
     display: inline;
   }
@@ -1286,7 +1292,7 @@
     padding-left: 28px;
     padding-right: 28px;
   }
-  .catmus__flex__item{
+  .videos .catmus__flex__item{
     width: 100%;
     margin-bottom: 10px;
 
@@ -1312,7 +1318,7 @@
       font-size: 16px;
     }
   }
-  .catmus__flex__item__type{
+  .videos .catmus__flex__item__type{
     display: block;
     color: $third-color;
     font-family: $ff-text;
