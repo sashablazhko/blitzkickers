@@ -227,8 +227,56 @@ $(function() {
     }
   })
 
+//  select на странице prod
+  selwl('.select_list_one_callback', '.day_call');
+  function selwl(sel, divb)
+  {
+    $(sel).click(function(event)
+    {
+      event.stopPropagation();
+      selelc();
+      if ($(this).children(divb).is(':hidden'))
+      {
+        $(this).closest(sel).children(divb).slideDown(100);
+        $(sel).children('.init').addClass('init_open');
+        $(sel).children('.init__btn').each(function(indx, element){
+          $(element).toggleClass('prodmob__select--display');
+        });
 
 
+      }
+
+    });
+
+    var seack = $(sel + " " + divb).find('li:not(.init)');
+    $(sel).on("click", "li:not(.init)", function() {
+      seack.removeClass('selected');
+      $(this).addClass('selected');
+      $(sel).children('.init').html($(this).html());
+      $(divb).slideUp(100);
+      $(sel).children('.init').removeClass('init_open');
+      $(sel).children('.init__btn').each(function(indx, element){
+        $(element).toggleClass('prodmob__select--display');
+      });
+    });
+  }
+
+  function selelc() {
+    $(".select_list_one_callback").children('.day_call').slideUp(100);
+    $(".select_list_one_callback").children('.init').removeClass('init_open');
+    $(".select_list_one_callback").children('.prodmob__select__list__close').addClass('prodmob__select--display');
+    $(".select_list_one_callback").children('.prodmob__select__list__triangle').removeClass('prodmob__select--display');
+
+  }
+
+  $('html').click(function(){
+    selelc();
+  });
+
+  $('.send').click(function(){
+    alert($('.select_list_one_callback').children('.init').html());
+  });
+//  END select на странице prod
 
 
 });

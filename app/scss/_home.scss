@@ -626,8 +626,16 @@
       &:hover .interviews__popular__image .interviews__popular__image__pc{
         opacity: 0;
       }
+      &:hover .interviews__popular__info{
+        opacity: 0;
+      }
       &:hover .interviews__popular__image__cont{
         background-color: $third-color;;
+      }
+
+      .interviews__popular__info--display,
+      .interviews__popular__image__pc--display{
+        opacity: 1 !important;
       }
     }
 
@@ -707,7 +715,7 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: 6px;
+      bottom: 0px;
       background-color: #fff;
       z-index: 1;
       text-align: center;
